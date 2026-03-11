@@ -26,7 +26,7 @@ class AvailabilityStatus {
               List<AvailabilityModel>.from(json["data"]!.map((x) => AvailabilityModel.fromJson(x)));
 
           // TODO: remove this line after the missing Markets data is fixed on the backend - December 2025
-          returnList.removeWhere((model) => model.name == "Markets");
+          //returnList.removeWhere((model) => model.name == "Markets");
 
           for (int index = 0; index < returnList.length; index++) {
             if (returnList[index].subLocations.length > 3) {
