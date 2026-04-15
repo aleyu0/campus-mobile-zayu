@@ -34,6 +34,7 @@ import 'package:campus_mobile_experimental/ui/shuttle/add_shuttle_stops_view.dar
 import 'package:campus_mobile_experimental/ui/shuttle/manage_shuttle_view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:campus_mobile_experimental/ui/esrimap/esrimap.dart';
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -50,7 +51,7 @@ class Router {
           return Home();
         });
       case RoutePaths.MAP:
-        return MaterialPageRoute(builder: (_) => prefix0.Maps());
+        return MaterialPageRoute(builder: (_) => EsriMap());
       case RoutePaths.MAP_SEARCH:
         return MaterialPageRoute(builder: (_) => MapSearchView());
       case RoutePaths.NOTIFICATIONS:

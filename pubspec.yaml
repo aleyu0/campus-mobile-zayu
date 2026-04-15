@@ -33,8 +33,6 @@ dependencies:
   measured_size: 1.0.0
   geolocator: ^13.0.4
   package_info_plus: ^8.3.1
-  flutter_markdown: ^0.6.18
-  flutter_svg: ^2.2.0
   percent_indicator: ^4.2.5
   permission_handler: ^12.0.1
   pointycastle: ^3.9.0
@@ -42,13 +40,13 @@ dependencies:
   shared_preferences: ^2.5.3
   app_links: ^3.0.0
   url_launcher: ^6.3.1
-  visibility_detector: ^0.4.0+2
   webview_flutter: ^4.4.2
   wifi_connection:
     git:
       url: https://github.com/UCSD/wifi_connection.git
       ref: e0fb416f81daedeabb1eedef22041e67f30f792b
   device_info_plus: ^11.5.0
+  arcgis_maps: ^200.7.0+4560
 dependency_overrides:
   google_maps_flutter_ios: 2.15.7
   value_layout_builder: ^0.5.0 # Fix Flutter 3.32.0 compatibility
@@ -62,7 +60,6 @@ flutter:
   assets:
     - assets/images/
     - assets/images/onboarding/
-    - assets/images/tgpt/
     - .env
   fonts:
     - family: Refrigerator Deluxe
